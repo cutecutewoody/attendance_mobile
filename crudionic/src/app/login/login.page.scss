@@ -1,0 +1,14 @@
+.ion-color-gold {
+    --ion-color-gold: #17a2b8;
+    --ion-color-gold-rgb: 255, 215, 0;
+    --ion-color-gold-contrast: #ffffff;
+    --ion-color-gold-contrast-rgb: 0, 0, 0;
+    --ion-color-gold-shade: hsl(188, 69%, 23%);
+    --ion-color-gold-tint: #17a2b8;
+    --ion-color-base: var(--ion-color-gold) !important;
+    --ion-color-base-rgb: var(--ion-color-gold-rgb) !important;
+    --ion-color-contrast: var(--ion-color-gold-contrast) !important;
+    --ion-color-contrast-rgb: var(--ion-color-gold-contrast-rgb) !important;
+    --ion-color-shade: var(--ion-color-gold-shade) !important;
+    --ion-color-tint: var(--ion-color-gold-tint) !important;
+}

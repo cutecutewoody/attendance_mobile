@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title color="Yellow" class="title-content">{{courseID}}</ion-title>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/"></ion-back-button>
+  </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Your Progress: {{percentageStr}}</ion-card-subtitle>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-progress-bar color="tiff" style="height: 20px" value="{{percentage}}"></ion-progress-bar>
+          </ion-card-content>
+      </ion-card>
+  <ion-list>     
+        <ion-item *ngFor="let record of attenRecords" >           
+              <img  slot="end" src="{{record.imgsrc}}" width="20" height="20">
+            <ion-label>{{record.section_name}}</ion-label>
+          </ion-item>
+         
+        </ion-list>
+</ion-content>

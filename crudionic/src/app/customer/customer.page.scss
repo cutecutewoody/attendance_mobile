@@ -1,0 +1,42 @@
+.ion-color-tiff {
+    --ion-color-tiff: #17a2b8;
+    --ion-color-tiff-rgb: 255, 215, 0;
+    --ion-color-tiff-contrast: #ffffff;
+    --ion-color-tiff-contrast-rgb: 0, 0, 0;
+    --ion-color-tiff-shade: hsl(188, 69%, 23%);
+    --ion-color-tiff-tint: #17a2b8;
+    --ion-color-base: var(--ion-color-tiff) !important;
+    --ion-color-base-rgb: var(--ion-color-tiff-rgb) !important;
+    --ion-color-contrast: var(--ion-color-tiff-contrast) !important;
+    --ion-color-contrast-rgb: var(--ion-color-tiff-contrast-rgb) !important;
+    --ion-color-shade: var(--ion-color-tiff-shade) !important;
+    --ion-color-tint: var(--ion-color-tiff-tint) !important;
+}
+.ion-color-Yellow {
+    --ion-color-tiff: #f4f5a7;
+    --ion-color-tiff-rgb: 255, 215, 0;
+    --ion-color-tiff-contrast: #1c5861;
+    --ion-color-tiff-contrast-rgb: 0, 0, 0;
+    --ion-color-tiff-shade: #20636d;
+    --ion-color-tiff-tint: #509da8;
+    --ion-color-base: var(--ion-color-tiff) !important;
+    --ion-color-base-rgb: var(--ion-color-tiff-rgb) !important;
+    --ion-color-contrast: var(--ion-color-tiff-contrast) !important;
+    --ion-color-contrast-rgb: var(--ion-color-tiff-contrast-rgb) !important;
+    --ion-color-shade: var(--ion-color-tiff-shade) !important;
+    --ion-color-tint: var(--ion-color-tiff-tint) !important;
+}
+.lower-content {
+    position: fixed;
+  
+    right: 5%;
+    bottom: 0;
+  
+  }
+  ion-item {
+    --ion-background-color: hsl(188, 100%, 94%) !important;
+    text-align: center;
+    color: #238b9b;
+    font-weight: bold;
+    border-color: #ffffff;
+  }

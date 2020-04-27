@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+	<ion-title  >
+		Welcome 
+			<ion-text color="tiff"  style="font-weight: bold;">
+				<i>{{username}}</i>
+			</ion-text> 
+	</ion-title>
+    <!-- <ion-buttons slot ="primary" (click)="addCustomer()">
+      <ion-button color="tertiary" fill="outline">
+        NEW
+        <ion-icon slot ="end" name="add"></ion-icon>
+      </ion-button>
+    </ion-buttons> -->
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+	<ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+			<ion-refresher-content
+				pullingIcon="arrow-dropdown"
+				pullingText="Pull to refresh"
+				refreshingSpinner="circles"
+				refreshingText="Refreshing...">
+			</ion-refresher-content>
+	</ion-refresher>
+
+		
+		<ion-list>
+				<ion-item-sliding *ngFor="let gorc of gorcs">
+					<ion-item-options side="start">
+						<!-- <ion-item-option color="Yellow"(click)="viewPercentage(gorc.id)" >View</ion-item-option> -->
+						<ion-item-option color="tiff" (click)="viewPercentageDetl(gorc.GorC_id,gorc.GorC_charger_id,gorc.calDigit,gorc.cal)">view Detail</ion-item-option>
+					</ion-item-options>
+		
+					<ion-item>
+						<ion-label>{{gorc.GorC_id}}</ion-label>
+					</ion-item>
+		
+					<ion-item-options side="end">
+					
+					<ion-item-option color="danger">{{gorc.cal}}</ion-item-option>
+						<!-- <ion-item-option color="secondary" (click)="showCustomer(customer.customer_id,customer.name_customer,customer.desc_customer)">Show</ion-item-option> -->
+						<!-- <ion-item-option (click)="updateCustomer(customer.customer_id,customer.name_customer,customer.desc_customer)">Update</ion-item-option> -->
+					</ion-item-options>
+				</ion-item-sliding>
+			</ion-list>
+		
+	
+
+	<!-- <ion-infinite-scroll (ionInfinite)="loadData($event)">
+			<ion-infinite-scroll-content
+			  loadingSpinner="bubbles"
+			  loadingText="Loading more data...">
+			</ion-infinite-scroll-content>
+	</ion-infinite-scroll> -->
+
+	<!-- fab placed to the (vertical) center and end -->
+<!-- fab placed in the center of the content with a list on each side -->
+<!-- <ion-fab vertical="center" horizontal="center" slot="fixed">
+			<ion-fab-button (click)="bioAuthen()" >
+		  <ion-icon size="large" name="add"></ion-icon>
+		</ion-fab-button>
+		
+</ion-fab> -->
+
+
+
+</ion-content>
+
+	
+
+ <img src="assets/icon/start.png" class="lower-content" style="width : 120px ; height : 120px;"(click) ="bioAuthen()" >
+
